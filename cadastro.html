@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="css/cadastro.css">
+	<title>Página de Cadastro</title>
+</head>
+<body>
+	<div id="wrapper">
+		<div class="title">
+			<h1>FAÇA O BEM</h1>
+			<h3>Cadastro de Administrador</h3>
+		</div>
+
+		<hr class="noscreen" />
+		
+        <div class="content">
+			<div class="column-left">
+				<ul class="menu">
+					<li><a href="index.html" class="active">Página Inicial</a></li>
+					<li><a href="quemsomos.html">Quem Somos</a></li>
+					<li><a href="doacoes.html">Doações</a></li>
+                    <li><a href="login.html">Login</a></li>
+				</ul>
+			</div>
+
+            <div id="skip-menu"></div>
+			<div class="column-right">
+			    <div class="box">
+				    <div class="box-top"></div>
+					    <div class="box-in">		      
+                            
+                            <h2 id="doacoes">Cadastro</h2>                
+                            <p id="doacao">Para fazer parte da <b>FAÇA O BEM</b>, preencha os dados abaixo</p>
+                            <p id="atencao">Atenção! Os campos com asterísco são obrigatórios</p>
+
+                            <form id="doacao">
+                                <p><label class="lblcad">*Nome:<input type="text" name="nome" id="nome" required class="txtcad" placeholder="informe seu nome" /></label></p>
+                                
+                                <p><label class="lblcad">&nbsp;&nbsp;Email:<input type="email" name="email" id="email" required class="txtcad" maxlength="40" placeholder="email@email.com" /></label></p>
+                                
+                                <p><label class="lblcad">*Telefone:<input type="tel" name="telefone" id="telefone" required class="txtcad" maxlength="12" placeholder="(99)9999.9999" /></label></p>
+                                
+                                <p><label class="lblcad">*Logradouro:<input type="text" name="endereco" id="endereco" required class="txtcad" placeholder="Rua, Nº, Bairro"/></label></p>
+                                <p><label class="lblcad">*Estado<select class="txtcad" required id="estado">
+
+                                    <optgroup label="Nordeste">
+                                        <option>selecione o seu estado</option>
+                                        <option value="Bahia">Bahia</option>
+                                        <option value="Ceará">Ceará</option>
+                                        <option value="Paraíba">Paraíba</option>
+                                        <option value="Pernambuco">Pernambuco</option>
+                                        <option value="Rio Grande do Norte">Rio Grande do Norte</option>
+                                    </optgroup>
+                                    <optgroup label="Norte">
+                                        <option value="Acre">Acre</option>
+                                        <option value="Amazonas">Amazonas</option>
+                                        <option value="Pará">Pará</option>
+                                        <option value="Tocantins">Tocantins</option>                    
+                                    </optgroup>
+                                
+                                </select></label></p>
+
+                                <p><label class="lblcad">*CPF:<input type="text" name="cpf" id="cpf" required class="txtcad" maxlength="11" placeholder="somente números" /></label></p>
+                                
+                                <p><label class="lblcad">*RG:<input type="text" name="rg" id="rg" required class="txtcad" maxlength="11" placeholder="somente números" /></label></p><br/>
+                                
+                                <label id="lblexperiencia">*Experiência c/ trabalho voluntário?&nbsp;</label>
+
+                                <label>Sim &nbsp;<input type="radio" name="experiencia" value="sim"/></label>
+                                <label>Não &nbsp;<input type="radio" name="experiencia" value="nao"/></label>
+
+                                <br/><br/>                               
+
+                                <p>Caso sim, conte-nos!:<br/>
+                                    <textarea cols="50" rows="10" placeholder="Trabalhei..."></textarea>
+                                </p><br/>
+                                <input type="submit" value="Cadastrar" id="botao"/>                                
+
+                            </form>					
+				      </div>
+			    </div>
+		    </div>
+	    </div>
+    </div>
+	
+    <footer>Copyright © 2016 FAÇA O BEM - Todos os direitos reservados</footer>
+</body>
+</html>
