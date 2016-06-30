@@ -1,14 +1,12 @@
 * { margin: 0; padding: 0;}
 
-html { height: 100%; font-size: 62.5% }
+html {height: 100%; font-size: 62.5% }
 
 body {
-height: 100%;
-background-image: url("../imagens/background.jpg");
-background-repeat: no-repeat; 
-background-size: auto;
+background: url("../imagens/background.jpg") no-repeat center center fixed;
+background-size: cover;
 text-align: center;
-//font: Verdana, Arial, Helvetica, sans-serif;
+font-family: candara;
 font-size: 16px;
 }
 
@@ -20,7 +18,6 @@ list-style-type: none;
 
 ul.menu li {
 background: url('.img/menu-li-divider.gif') no-repeat 50% 100%;
-font-family: candara;
 padding: 18px 0;
 }
 
@@ -85,14 +82,12 @@ letter-spacing: 1px;
 }
 
 .title h3{
-font-family: candara;
 color: #FFFFFF;
 margin: 4px 0 0 21px;
 padding-bottom: 12px;
 }
 
 h1 {
-font-family: candara;
 font-size: 30pt;
 color: #FFFFFF;
 padding-top: 25px;
@@ -106,7 +101,6 @@ font-weight: normal;
 }
 
 h2 {
-font-family: candara;
 color: #282828;
 letter-spacing: 1px;
 background: url('.img/h2-bg.gif') no-repeat 0 53%;
@@ -165,7 +159,6 @@ margin: 0 6em 0 2em;
 }
 
 .box-in p {
-font-family: candara;
 line-height: 1.6;
 margin: 0 0 10px 25px;
 color: #242424;
@@ -207,7 +200,6 @@ h2#doacoes{
 }
 
 label#lblexperiencia{
-	font-family: candara;
 	margin: 20px 0px 0px 20px;		
 }
 
@@ -246,5 +238,4 @@ p#atencao{
 
 footer{
     margin: -50px 0px 0px 250px;
-    font-family: candara;
 }
