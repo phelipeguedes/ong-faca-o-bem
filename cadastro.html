@@ -2,8 +2,10 @@
 <html>
 <head>
 	<meta charset="utf-8"/>
-	<link rel="stylesheet" type="text/css" href="css/cadastro.css">
-	<title>Página de Cadastro</title>
+    <script type="text/javascript" src="jquery/jquery-2.2.3.min.js"></script>
+	<script type="text/javascript" src="jquery/funcoes.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/cadastro.css">	
+    <title>Página de Cadastro</title>    
 </head>
 <body>
     <div id="wrapper">
@@ -12,7 +14,7 @@
 	    <h3>Cadastro de Administrador</h3>
 	</div>
 
-	<hr class="noscreen" />
+	<hr class="noscreen"/>
 		
         <div class="content">
 	    <div class="column-left">
@@ -20,11 +22,11 @@
 	 	    <li><a href="index.html" class="active">Página Inicial</a></li>
 		    <li><a href="quemsomos.html">Quem Somos</a></li>
 		    <li><a href="doacoes.html">Doações</a></li>
-                    <li><a href="login.html">Login</a></li>
+            <li><a href="login.html">Login</a></li>
 		</ul>
 	    </div>
 
-            <div id="skip-menu"></div>
+        <div id="skip-menu"></div>
 	    <div class="column-right">
 	        <div class="box">
 		    <div class="box-top"></div>
@@ -37,12 +39,14 @@
                             <form id="doacao">
                                 <p><label class="lblcad">*Nome:<input type="text" name="nome" id="nome" required class="txtcad" placeholder="informe seu nome" /></label></p>
                                 
-                                <p><label class="lblcad">&nbsp;&nbsp;Email:<input type="email" name="email" id="email" required class="txtcad" maxlength="40" placeholder="email@email.com" /></label></p>
+                                <p><label class="lblcad">&nbsp;&nbsp;*Email:<input type="email" name="email" id="email" required class="txtcad" maxlength="40" placeholder="email@email.com" /></label></p>
                                 
-                                <p><label class="lblcad">*Telefone:<input type="tel" name="telefone" id="telefone" required class="txtcad" maxlength="12" placeholder="(99)9999.9999" /></label></p>
+                                <p><label class="lblcad">*Telefone:<input type="text" name="tel" id="tel" required class="txtcad" maxlength="13" placeholder="somente números (99)9999.9999" /></label></p>
+
+                                <p><label class="lblcad">Celular:<input type="text" name="cel" id="cel" class="txtcad" maxlength="14" placeholder="somente números (99)9999.9999" /></label></p>
                                 
                                 <p><label class="lblcad">*Logradouro:<input type="text" name="endereco" id="endereco" required class="txtcad" placeholder="Rua, Nº, Bairro"/></label></p>
-                                <p><label class="lblcad">*Estado<select class="txtcad" required id="estado">
+                                <p><label class="lblcad">*Estado<select class="txtcad" required id="estado"></label>
 
                                     <optgroup label="Nordeste">
                                         <option>selecione o seu estado</option>
@@ -59,16 +63,21 @@
                                         <option value="Tocantins">Tocantins</option>                    
                                     </optgroup>
                                 
-                                </select></label></p>
+                                </select></p>
 
-                                <p><label class="lblcad">*CPF:<input type="text" name="cpf" id="cpf" required class="txtcad" maxlength="11" placeholder="somente números" /></label></p>
+                                <p><label class="lblcad">*Cidade<select class="txtcad" required id="cidade"></label>
+                                    <option>selecione a sua cidade</option>
+                                    <option>Fortaleza</option>
+                                </select></p>
+
+                                <p><label class="lblcad">*CPF:<input type="text" name="cpf" id="cpf" required class="txtcad" maxlength="12" placeholder="somente números" /></label></p>
                                 
-                                <p><label class="lblcad">*RG:<input type="text" name="rg" id="rg" required class="txtcad" maxlength="11" placeholder="somente números" /></label></p><br/>
+                                <p><label class="lblcad">*RG:<input type="text" name="rg" id="rg" required class="txtcad" maxlength="12" placeholder="somente números" /></label></p><br/>
                                 
                                 <label id="lblexperiencia">*Experiência c/ trabalho voluntário?&nbsp;</label>
 
-                                <label>Sim &nbsp;<input type="radio" name="experiencia" value="sim"/></label>
-                                <label>Não &nbsp;<input type="radio" name="experiencia" value="nao"/></label>
+                                <label>Sim &nbsp;<input type="radio" name="experiencia" value="sim" required /></label>
+                                <label>Não &nbsp;<input type="radio" name="experiencia" value="nao" required /></label>
 
                                 <br/><br/>                               
 

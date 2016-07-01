@@ -199,12 +199,13 @@ h2#doacoes{
 select#suadoacao{
     width: 205px;
     margin-left: 8px;
-    padding: 6px;
+    padding: 8px;
 }
 
-select#estado{
+select.txtcad{
     width: 275px;
 }
+
 
 p label{
     margin: 30px 0px 0px 0px;

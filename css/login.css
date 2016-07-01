@@ -81,15 +81,6 @@ a#cadastrar, a:visited{
 	color: white;
 }
 
-button#btn-login{
-	padding: 8px;
-	width: 320px;
-	margin: 10px 42px;
-	background-color: #23355C;
-	border-radius: 4px;
-	color: white;
-}
-
 a#login, a:visited{
 	text-decoration: none;
 	color: white;
@@ -186,10 +177,23 @@ form{
 	margin: auto;
 }
 
-input.txtlogin{
+.txtlogin{
 	margin-top: 16px;
 	padding: 8px;
 	width: 300px;
+}
+
+input#login{
+	margin-left: 7px;
+}
+
+button#btn-login{
+	padding: 8px;
+	width: 324px;
+	margin: 10px 42px;
+	background-color: #23355C;
+	border-radius: 4px;
+	color: white;
 }
 
 .content {

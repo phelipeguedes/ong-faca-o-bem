@@ -3,6 +3,8 @@
 <head>
     <title>Faça o Bem - Página Inicial</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="text/javascript" src="jquery/jquery-2.2.3.min.js"></script>
+    <script type="text/javascript" src="jquery/funcoes.js"></script>
     <link rel="stylesheet" href="css/doacoes.css" type="text/css"/>
 </head>
 <body>
@@ -39,10 +41,10 @@
                                 
                                 <p><label class="lblcad">&nbsp;&nbsp;Email:<input type="email" name="email" id="email" required class="txtcad" maxlength="40" placeholder="email@email.com" /></label></p>
                                 
-                                <p><label class="lblcad">*Telefone:<input type="tel" name="telefone" id="telefone" required class="txtcad" maxlength="12" placeholder="(99)9999.9999" /></label></p>
+                                <p><label class="lblcad">*Telefone:<input type="tel" name="tel" id="tel" required class="txtcad" maxlength="13" placeholder=" somente números (99)9999.9999" /></label></p>
                                 
                                 <p><label class="lblcad">*Logradouro:<input type="text" name="endereco" id="endereco" required class="txtcad" placeholder="Rua, Nº, Bairro"/></label></p>
-                                <p><label class="lblcad">*Estado<select class="txtcad" required id="estado">
+                                <p><label class="lblcad">*Estado<select class="txtcad" required id="estado"></label>
 
                                     <optgroup label="Nordeste">
                                         <option>selecione o seu estado</option>
@@ -59,11 +61,16 @@
                                         <option value="Tocantins">Tocantins</option>                    
                                     </optgroup>
                                 
-                                </select></label></p>
+                                </select></p>
 
-                                <p><label class="lblcad">*CPF:<input type="text" name="cpf" id="cpf" required class="txtcad" maxlength="11" placeholder="somente números" /></label></p>
+                                <p><label class="lblcad">*Cidade<select class="txtcad" required id="cidade"></label>
+                                    <option>selecione a sua cidade</option>
+                                    <option>Fortaleza</option>
+                                </select></p>
+
+                                <p><label class="lblcad">*CPF:<input type="text" name="cpf" id="cpf" required class="txtcad" maxlength="12" placeholder="somente números" /></label></p>
                                 
-                                <p><label class="lblcad">*RG:<input type="text" name="rg" id="rg" required class="txtcad" maxlength="11" placeholder="somente números" /></label></p><br/>
+                                <p><label class="lblcad">*RG:<input type="text" name="rg" id="rg" required class="txtcad" maxlength="12" placeholder="somente números" /></label></p><br/>
                                 
                                 <p><label class="lblcad">*Sua doação:<select required id="suadoacao">
 

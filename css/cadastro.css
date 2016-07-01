@@ -184,7 +184,7 @@ h2#doacoes{
 }
 
 /* INPUTS E OUTRAS PARTES DO FORMULÁRIO */
-/* texts cadastro*/
+/* text's cadastro*/
 .txtcad{
     float: right;    
     display: block;
@@ -209,7 +209,7 @@ select#suadoacao{
     padding: 6px;
 }
 
-select#estado{
+select.txtcad{
     width: 275px;
 }
 
