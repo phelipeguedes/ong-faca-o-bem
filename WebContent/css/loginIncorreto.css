@@ -1,0 +1,40 @@
+@CHARSET "ISO-8859-1";
+
+/* Cor da página e imagem de fundo centralizada */
+body{
+	background: #F7F7F7 url("../imagens/m.jpg") no-repeat fixed center;
+	font-family:candara;
+}
+
+/* Definições do menu */
+div#menu{
+	background:#EEE9E9;
+	border: 1px solid #000;
+	width: 190px;
+	margin-top: 26px;
+}
+
+ul.menu{
+	list-style: none;
+	text-decoration:none;
+	padding-right: 5px;
+}
+
+/* Links da página */
+a:link{
+	text-decoration: none;
+	color:#00008B;
+}
+
+a:visited{
+	text-decoration: none;
+	color:#00008B;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+a.active{
+	background:#BEBEBE;
+}

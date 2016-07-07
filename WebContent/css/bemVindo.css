@@ -1,0 +1,52 @@
+@CHARSET "ISO-8859-1";
+
+/* Cor da página e imagem de fundo centralizada */
+body{
+	background: #FFF url("../imagens/minions.jpg") no-repeat fixed center;
+	font-family: candara;
+}
+
+hr{
+	color:#00008B;
+}
+
+/* text box: 'para onde vamos...' */
+input#onde{
+	width: 600px;
+	height:30px;
+	margin: 0px auto;
+	display: block;
+}
+
+/* Definições do menu */
+div#menu{
+	background:#EEE9E9;
+	border: 1px solid #000;
+	width: 190px;
+	margin-top: 8px;
+}
+
+ul.menu{
+	list-style: none;
+	text-decoration:none;
+	padding-right: 5px;
+}
+
+/* Links da página */
+a:link{
+	text-decoration: none;
+	color:#00008B;
+}
+
+a:visited{
+	text-decoration: none;
+	color:#00008B;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+a.active{
+	background:#BEBEBE;
+}
